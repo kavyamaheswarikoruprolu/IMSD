@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Math Object Demo</title>
+  <script>
+    function showMathOperations() {
+      let number = 8.7;
+      // Using Math object
+      let pi = Math.PI;
+      let e = Math.E;
+      let round = Math.round(number);
+      let floor = Math.floor(number);
+      let ceil = Math.ceil(number);
+      let sqrt = Math.sqrt(49);
+      let pow = Math.pow(3, 3); // 3^3
+      let abs = Math.abs(-15);
+      let max = Math.max(5, 12, 9, 20);
+      let min = Math.min(5, 12, 9, 20);
+      let random = Math.random(); // between 0 and 1
+      // Displaying results in HTML
+      document.getElementById("pi").innerText = "Math.PI: " + pi;
+      document.getElementById("e").innerText = "Math.E: " + e;
+      document.getElementById("round").innerText = "Math.round(8.7): " + round;
+      document.getElementById("floor").innerText = "Math.floor(8.7): " + floor;
+      document.getElementById("ceil").innerText = "Math.ceil(8.7): " + ceil;
+      document.getElementById("sqrt").innerText = "Math.sqrt(49): " + sqrt;
+      document.getElementById("pow").innerText = "Math.pow(3, 3): " + pow;
+      document.getElementById("abs").innerText = "Math.abs(-15): " + abs;
+      document.getElementById("max").innerText = "Math.max(5, 12, 9, 20): " + max;
+      document.getElementById("min").innerText = "Math.min(5, 12, 9, 20): " + min;
+      document.getElementById("random").innerText = "Math.random(): " +    random.toFixed(4);
+    }
+  </script>
+</head>
+<body>
+  <h2>JavaScript Math Object Demo</h2>
+  <button onclick="showMathOperations()">Show Math Results</button>
+  <p id="pi"></p>
+  <p id="e"></p>
+  <p id="round"></p>
+  <p id="floor"></p>
+  <p id="ceil"></p>
+  <p id="sqrt"></p>
+  <p id="pow"></p>
+  <p id="abs"></p>
+  <p id="max"></p>
+  <p id="min"></p>
+  <p id="random"></p>
+</body>
+</html>
+
