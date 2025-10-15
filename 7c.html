@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array Object Demo</title>
+  <script>
+    function showArrayOperations() {
+      // Create an array
+      let colors = ["White", "Black", "Blue"];
+      // Display original array
+      document.getElementById("original").innerText = "Original Array: " + colors;
+      // Property: length
+      document.getElementById("length").innerText = "Length: " + colors.length;
+      // Method: push() - add to end
+      colors.push("Green");
+      // Method: pop() - remove from end
+      let popped = colors.pop();
+      // Method: unshift() - add to start
+      colors.unshift("Pink");
+      // Method: shift() - remove from start
+      let shifted = colors.shift();
+      // Method: indexOf() - find index
+      let index = colors.indexOf("Violet");
+      // Method: join() - convert to string
+      let joined = colors.join(" | ");
+      // Display results
+      document.getElementById("finalArray").innerText = "Final Array: " + colors;
+      document.getElementById("popped").innerText = "Popped Element: " + popped;
+      document.getElementById("shifted").innerText = "Shifted Element: " + shifted;
+      document.getElementById("index").innerText = "Index of Banana: " + index;
+      document.getElementById("joined").innerText = "Joined Array: " + joined;
+    }
+  </script>
+</head>
+<body>
+  <h2>Array Object Properties and Methods</h2>
+  <button onclick="showArrayOperations()">Run Array Operations</button>
+  <p id="original"></p>
+  <p id="length"></p>
+  <p id="popped"></p>
+  <p id="shifted"></p>
+  <p id="index"></p>
+  <p id="joined"></p>
+  <p id="finalArray" style="font-weight: bold; color: darkorange;"></p>
+</body>
+</html>
+
